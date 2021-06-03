@@ -1,0 +1,33 @@
+- var img = 'img/';
+
+doctype
+html
+	include blocks/head.pug
+		title
+	body
+		include blocks/header.pug
+
+		main.page-container
+			section.block-7 
+				.flex 
+					img(src=img+"Rectangle 34.png", alt="")
+					.text__right
+						h2 Burger with blue cheese
+						p Burger bread - 4 pieces<br>Meat - 400 gr<br>Steak sauce - 3 tbsp<br>Egg yolk - 4 pieces<br>Elada® blue cheese - 100 gr<br>Salad leaves
+						p.dop Salt and pepper
+						p Mix the meat, steak sauce, egg yolk, salt and pepper in a large plate. Make cutlets from the resulting mixture and put butter in them. Fry the cutlets for 4 minutes, on each side.Put the fried cutlets in the bread, then add blue cheese and lettuce.
+						h3 used product 
+						img(src=img+"Layer 4 copy 2.png", alt="")
+				.container
+					.block__yt--dop 
+						img(src=img+"recipe video.png", alt="")
+					h2 you may also like
+					.flex 
+						.block__yt
+							img(src=img+"video 1_1.png", alt="")
+						.block__yt
+							img(src=img+"video 2_1.png", alt="")
+						.block__yt
+							img(src=img+"video 3.png", alt="")
+		include blocks/footer.pug
+		include blocks/scripts.pug
