@@ -31,3 +31,301 @@ body
 .column > a
 	display: flex
 	color: white
+
+
+
+
+.block-1
+	height: 580px
+	background-image: url(../img/1V3A1286.png)
+	position: relative
+	background-size: cover
+	.copy
+		padding: 2px
+		display: flex
+		align-items: center
+		position: absolute
+		right: 215px
+		bottom: 230px
+		border: 1px solid #2C417F
+		border-radius: 50%
+		color: #2C417F
+		font-weight: 900
+		font-size: 10px
+		line-height: 10px
+	.dop__title
+		position: absolute
+		right: 215px
+		bottom: 150px
+		color: #2C417F
+		font-weight: 900
+		font-size: 90px
+		line-height: 90px
+		text-transform: uppercase
+	.manin__title
+		z-index: 2
+		position: absolute
+		right: 0
+		bottom: -50px
+		background: #2C417F
+		max-width: 930px
+		width: 100%
+		height: 195px
+		display: flex
+		align-items: center
+		h1
+			margin-left: 120px
+			text-align: center
+			font-weight: 400
+			font-size: 66px
+			line-height: 70px
+			color: white
+			max-width: 600px
+			text-transform: uppercase
+.block-2 > img
+	position: absolute
+	right: 0
+	top: -100px
+.block-2
+	position: relative
+	padding-top: 80px
+	.block-2__img
+		padding-top: 50px
+		position: relative
+		z-index: 2
+		display: flex
+		justify-content: flex-end
+		a
+			position: absolute
+			right: 0
+			bottom: 0
+			z-index: 3
+			background: #2C417F
+			max-width: 200px
+			width: 100%
+			height: 60px
+			display: flex
+			justify-content: center
+			align-items: center
+			color: white
+			text-align: center
+			text-transform: uppercase
+			font-size: 22px
+			line-height: 100%
+	.block-2__back--img
+		left: 0
+		right: 0
+		position: absolute
+		margin: 0 auto
+		max-width: 700px
+		width: 100%
+		height: 400px
+		z-index: 1
+		background: #2C417F
+	.col
+		.hr
+			margin-top: -25px
+			width: 100px
+			height: 3px
+			background: #A9D85C
+		h2
+			color: #A9D85C
+			font-weight: bold
+			font-size: 48px
+			line-height: 140%
+			margin-bottom: 20px
+			text-transform: uppercase
+		p
+			margin-top: 20px
+			font-size: 28px
+			line-height: 140%
+			max-width: 660px
+			margin-bottom: 10px
+		a
+			background: #A9D85C
+			max-width: 200px
+			width: 100%
+			height: 60px
+			display: flex
+			justify-content: center
+			align-items: center
+			color: white
+			text-align: center
+			text-transform: uppercase
+			font-size: 22px
+			line-height: 100%
+			margin-bottom: 80px
+.block-3 
+	position: relative
+	margin-top: 70px
+	.img__bg--1
+		position: absolute
+		right: 0
+		top: 350px
+		width: 450px
+	.img__bg--2
+		top: 510px
+		width: 450px
+		position: absolute
+		right: 0
+	h2
+		color: #2C417F
+		padding-bottom: 10px
+		max-width: 320px
+		font-weight: bold
+		font-size: 48px
+		text-transform: uppercase
+		border-bottom: 3px solid #2C417F
+		margin: 0 auto
+	p
+		margin: 0 auto
+		margin-top: 20px
+		max-width: 900px
+		text-align: center
+		margin-bottom: 70px
+	.flex
+		justify-content: space-between
+		margin-top: 70px
+		margin-bottom: 90px
+
+.block-3--dop
+	position: relative
+	img
+		z-index: 1
+	.col
+		top: 115px
+		right: 0
+		max-width: 760px
+		width: 100%
+		height: 356px
+		z-index: 2
+		position: absolute
+		padding-top: 42px
+		padding-left: 42px
+		background: #A9D85C
+		h2
+			margin: 0
+			font-weight: 500
+			font-size: 48px
+			text-transform: uppercase
+			color: white
+			border: none
+		.hr
+			height: 3px
+			width: 100px
+			background: white
+		p
+			margin: 0
+			margin-top: 38px
+			font-size: 28px
+			color: white
+			max-width: 500px
+			text-align: left
+			margin-bottom: 40px
+		a
+			color: white
+			text-transform: uppercase
+
+
+
+@include max-screen(1600px)
+	.block-3
+		.img__bg--1
+			position: absolute
+			right: 0
+			top: 500px
+			width: 300px
+		.img__bg--2
+			top: 610px
+			width: 300px
+			position: absolute
+			right: 0
+@include max-screen(1024px)
+	.block-2 .block-2__img img
+		max-width: 790px
+	.block__yt
+		img
+			max-width: 450px
+			max-height: 310px
+@include max-screen(768px)
+	.block-1
+		background-position: center
+	.block-3
+		.img__bg--1
+			top: 550px
+			width: 250px
+		.img__bg--2
+			top: 650px
+			width: 250px
+	.block-3--dop .col
+		top: 170px
+	.block-2>img
+		max-width: 300px
+		top: -50px
+	.block-2 .block-2__img img
+		max-width: 740px
+	.block-1 .dop__title
+		right: 95px
+	.block-1 .manin__title h1
+		margin: 0 auto
+	.block__yt
+		img
+			max-width: 350px
+			max-height: 210px
+	.block__yt
+		div
+			iframe
+				width: 100%
+				height: auto
+@include max-screen(767px)
+	.block-3--dop img
+		margin-left: -10px
+	.block-1 .dop__title
+		right: 0px
+	.block-1 .manin__title h1
+		font-size: 53px
+		line-height: 53px
+	.block-2 .block-2__img img
+		max-width: 395px
+	.block-3 > .container
+		margin-top: 100px
+	.block-3--dop .col
+		padding-left: 10px
+	.block-3 .flex
+		margin: 15px auto
+		flex-direction: column
+	.block__yt
+		img
+			max-width: 100%
+			max-height: 260px
+	.block-1
+		height: 340px
+	.block-1 .copy
+		display: none
+@include max-screen(413px)
+	.block-1 .dop__title
+		font-size: 70px
+		line-height: 70px
+		right: 5px
+@include max-screen(374px)
+	.block-1 .dop__title
+		font-size: 50px
+		line-height: 50px
+	.block-1 .manin__title h1
+		font-size: 40px
+		line-height: 40px
+	.block-2 .col h2
+		font-size: 40px
+	.block-2>img
+		display: none
+	.block-2 .block-2__back--img
+		display: none
+	.block-2 .block-2__img img
+		max-width: 100%
+	.block-3 h2
+		font-size: 40px
+	.block-3--dop .col h2
+		font-size: 40px
+
+// OUR CHEESE
+
