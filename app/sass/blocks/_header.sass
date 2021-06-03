@@ -18,6 +18,8 @@ header
     display: none
 .main-menu-btn
     display: block
+#main-menu>li>a>span
+    right: 58px
 .sm-clean
     padding: 0
     background: none
@@ -28,7 +30,7 @@ header
             font-family: Roboto
             font-style: normal
             font-weight: 500
-            font-size: 12px
+            font-size: 18px
             line-height: 100%
             color: white
             text-transform: uppercase
@@ -87,11 +89,15 @@ header
     left: 0
 #main-menu-state:not(:checked) ~ #main-menu
     display: none
+#main-menu>li>.highlighted>span
+    right: 45px
 #main-menu-state:checked ~ #main-menu
+    padding-right: 58px
+    padding-left: 58px
     flex-direction: column
     display: flex
     width: 100%
-    max-width: 240px
+    max-width: 400px
     background: #2C417F
     position: fixed
     left: 205px
@@ -130,36 +136,65 @@ header
 #main-menu
     padding-right: 28px
     padding-left: 28px
-@include min-screen(768px)
-    .sm-clean
-        a
-            padding: 0px
-            padding-right: 100px
-            &:hover
-                padding: 0px
-                padding-right: 100px
-            &:active
-                padding: 0px
-                padding-right: 100px
-            &:focus
-                padding: 0px
-                padding-right: 100px
-    .sm-clean>li:last-child
-        a
-            padding-right: 0px
+#main-menu > a
+    color: white
+    font-size: 16px
+    line-height: 100%
+    display: flex
+    flex-direction: column
+    align-items: flex-end
+    margin-top: 35px
+#main-menu > li > a > span
+    position: absolute
+    top: 140px
+#main-menu > li > a
+    font-size: 18px
+#main-menu > li > ul
+    display: none
+#main-menu > li > ul > li
+    border: none
+#main-menu > li > ul > li > a
+    font-size: 12px
+#main-menu > li > .highlighted > span
+    top: 180px !important
+    transform: rotate(90deg)
+#main-menu > li > .highlighted
+    border-bottom: 0.5px solid #EAEAEA
+    width: 100%
+    padding-bottom: 5px
 
-@include max-screen(1300px)
-    .sm-clean
-        a
-            padding-right: 50px
-            &:hover
-                padding-right: 50px
-            &:active
-                padding-right: 50px
-            &:focus
-                padding-right: 50px
+@include max-screen(1680px)
+    #main-menu-state:checked ~ #main-menu
+        left: 105px
+    .header__menu
+        left: 100px
+@include max-screen(1280px)
+    #main-menu-state:checked ~ #main-menu
+        left: 35px
+    .header__menu
+        left: 30px
+@include max-screen(767px)
+    #main-menu>li>a>span
+        right: 30px
+    #main-menu>li>.highlighted>span
+        right: 18px
+    #main-menu-state:checked ~ #main-menu
+        max-width: 240px
+        left: 0px
+        padding-right: 28px
+        padding-left: 28px
+    .header__menu
+        left: 0px
+    .main-menu-btn-icon, .main-menu-btn-icon:before, .main-menu-btn-icon:after
+        width: 25px
+    .main-menu-btn-icon
+        width: 20px
+    .main-menu-btn-icon:after
+        width: 15px
+    #main-menu-state:checked ~ .main-menu-btn .main-menu-btn-icon:after
+        width: 25px
+
 @include max-screen(1024px)
-
     .sm-clean
         a
             padding-right: 0px
