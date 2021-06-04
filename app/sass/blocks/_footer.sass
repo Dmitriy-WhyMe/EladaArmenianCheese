@@ -63,18 +63,41 @@ footer
     footer
         padding-top: 20px
     footer > .flex
-        flex-direction: column
-    .column a svg
-        min-width: 40px
-        min-height: 40px
-        margin-right: 10px
-    .column--dop
+        justify-content: space-between
+    footer > .flex > .column
+        margin-left: 0px
+        margin-right: 0px
         a
-            text-align: center
+            margin-bottom: 20px
+            p
+                font-size: 10px !important
+                line-height: 12px
+        
+    .column a svg
+        max-width: 20px
+        max-height: 20px
+        margin-right: 10px
+    
+    .column--dop
+        flex-direction: column
+        display: flex
+        align-items: baseline
+        a
+            margin-bottom: 8px !important
+            text-align: left
             display: flex
             justify-content: center
+            font-size: 10px
+            line-height: 12px
+            p
+                font-size: 10px !important
+                line-height: 12px
     .social
-        justify-content: center
+        gap: 10px
+        justify-content: flex-end
+        a
+            svg
+                max-width: 20px
 @include max-screen(413px)
     .column
         margin-left: 10px
@@ -84,6 +107,3 @@ footer
         min-width: 20px
         min-height: 20px
         margin-right: 10px
-    .column
-        p
-            font-size: 20px

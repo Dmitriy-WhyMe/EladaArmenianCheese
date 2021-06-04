@@ -20,14 +20,34 @@ html
 						img(src=img+"Layer 4 copy 2.png", alt="")
 				.container
 					.block__yt--dop 
-						img(src=img+"recipe video.png", alt="")
+						<div onclick="this.nextElementSibling.style.display='block'; this.style.display='none'">
+							<img src="img/recipe video.png" style="cursor:pointer" />
+						</div>
+						<div style="display:none">
+							<iframe width="540" height="360" src="https://www.youtube.com/embed/yhS9LnDoo_w" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+						</div>
 					h2 you may also like
 					.flex 
 						.block__yt
-							img(src=img+"video 1_1.png", alt="")
+							<div onclick="this.nextElementSibling.style.display='block'; this.style.display='none'">
+								<img src="img/video 1_1.png" style="cursor:pointer" />
+							</div>
+							<div style="display:none">
+								<iframe width="540" height="360" src="https://www.youtube.com/embed/yhS9LnDoo_w" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+							</div>
 						.block__yt
-							img(src=img+"video 2_1.png", alt="")
+							<div onclick="this.nextElementSibling.style.display='block'; this.style.display='none'">
+								<img src="img/video 2_1.png" style="cursor:pointer" />
+							</div>
+							<div style="display:none">
+								<iframe width="540" height="360" src="https://www.youtube.com/embed/yhS9LnDoo_w" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+							</div>
 						.block__yt
-							img(src=img+"video 3.png", alt="")
+							<div onclick="this.nextElementSibling.style.display='block'; this.style.display='none'">
+								<img src="img/video 3.png" style="cursor:pointer" />
+							</div>
+							<div style="display:none">
+								<iframe width="540" height="360" src="https://www.youtube.com/embed/yhS9LnDoo_w" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+							</div>
 		include blocks/footer.pug
 		include blocks/scripts.pug

@@ -693,6 +693,7 @@ body
 				font-size: 16px
 				line-height: 180%
 	.btn
+		text-transform: uppercase
 		background: #2C417F
 		max-width: 265px
 		width: 100%
@@ -702,6 +703,8 @@ body
 		justify-content: center
 		text-align: center
 		color: white
+		font-size: 18px
+		line-height: 120%
 		margin-bottom: 50px
 		margin-top: 20px
 		svg
@@ -722,6 +725,7 @@ body
 			align-items: center
 			img
 			a
+				text-transform: uppercase
 				color: white
 				max-width: 265px
 				width: 100%
@@ -876,7 +880,19 @@ body
 		.flex
 			margin-bottom: 40px
 			gap: 15px
+.block-7 .container .block__yt--dop iframe
+	width: 921px
+	height: 482px
+.block-7 .container .flex .block__yt iframe
+	width: 380px
+	height: 300px
 @include max-screen(1024px)
+	.block-7 .container .block__yt--dop iframe
+		width: 540px
+		height: 360px
+	.block-7 .container .flex .block__yt iframe
+		width: 320px
+		height: 255px
 	.block-7 > .flex > img
 		max-width: 600px
 		height: auto
@@ -893,6 +909,9 @@ body
 				max-width: 320px
 				height: auto
 @include max-screen(1023px)
+	.block-7 .container .flex .block__yt iframe
+		width: 235px
+		height: 185px
 	.block-7>.flex
 		flex-direction: column
 	.block-7>.flex>img
@@ -907,6 +926,12 @@ body
 	.block-7 .block__yt img
 		max-width: 235px
 @include max-screen(767px)
+	.block-7 .container .flex .block__yt iframe
+		width: 300px
+		height: 240px
+	.block-7 .container .block__yt--dop iframe
+		width: 320px
+		height: 140px
 	.block-7 .container .flex
 		flex-direction: column
 		justify-content: center
@@ -1162,3 +1187,36 @@ body
 @include max-screen(374px)
 	.block-10 h1
 		font-size: 55px
+@include max-screen(767px)
+	h1
+		font-size: 30px !important
+	h2
+		font-size: 25px !important
+	h3
+		font-size: 15px !important
+	p
+		font-size: 18px !important
+	.block-1 .dop__title
+		font-size: 30px
+		line-height: 30px
+	body
+		font-size: 20px
+	.block-9 .big-hr
+		top: 35px
+		height: 35px
+	.block-4 .big-hr
+		margin-top: -5px
+		height: 35px
+	.block-4 .flex .columns .product a
+		font-size: 15px
+		padding-left: 5px
+		padding-right: 5px
+	.block-6 .big-hr
+		top: 7px
+	.block-6 .flex .block__1 a
+		font-size: 18px
+	.block-8 .big-hr
+		top: 4px
+	.block-8 .container .flex .block__right h2
+		padding-left: 0px
+
