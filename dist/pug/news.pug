@@ -1,0 +1,31 @@
+- var img = 'img/';
+
+doctype
+html
+	include blocks/head.pug
+		title
+	body
+		include blocks/header.pug
+
+		main.page-container(style="overflow: initial")
+			section.block--8
+				img(src=img+"news.png", alt="")
+			section.block-8
+				h1 news
+				.big-hr
+				.container
+					.flex
+						.block__left
+							h2 Blue mold cheese 
+							img(src=img+"blue-cheese-PTACKGH 2.png", alt="")
+							p There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable.There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable.There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable.There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable.
+						.block__right
+							h2 other news
+							p There are many variations of passages of Lorem Ipsum available
+							p There are many variations of passages of Lorem Ipsum available
+							p There are many variations of passages of Lorem Ipsum available
+							p There are many variations of passages of Lorem Ipsum available
+							p There are many variations of passages of Lorem Ipsum available
+							p There are many variations of passages of Lorem Ipsum available
+		include blocks/footer.pug
+		include blocks/scripts.pug

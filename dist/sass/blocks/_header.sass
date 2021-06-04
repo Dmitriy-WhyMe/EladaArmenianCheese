@@ -1,0 +1,238 @@
+header
+    display: flex
+    justify-content: center
+    align-items: center
+    position: relative
+    padding-top: 10px
+    padding-bottom: 10px
+.header__logo
+    max-width: 170px
+    height: 70px
+.header__menu
+    position: absolute
+    left: -10px
+    top: 22px
+.main-menu-btn
+    display: none
+#main-menu-state
+    display: none
+.main-menu-btn
+    display: block
+#main-menu>li>a>span
+    right: 58px
+
+.sm-clean
+    padding: 0
+    background: none
+    border-radius: 0px
+    li
+        margin-bottom: 50px
+        border-bottom: 0.5px solid #EAEAEA
+        a
+            font-family: Roboto
+            font-style: normal
+            font-weight: 500
+            font-size: 18px
+            line-height: 100%
+            color: white
+            text-transform: uppercase
+            
+            &:hover
+                font-family: Roboto
+                font-style: normal
+                font-weight: 500
+                font-size: 12px
+                line-height: 100%
+                color: white
+            &:focus
+                font-family: Roboto
+                font-style: normal
+                font-weight: 500
+                font-size: 12px
+                line-height: 100%
+                color: white
+            &:active
+                font-family: Roboto
+                font-style: normal
+                font-weight: 500
+                font-size: 12px
+                line-height: 100%
+                color: white
+.active:after
+    content: ''
+    margin-top: 9px
+    display: block
+    height: 6px
+    width: 35px
+    margin: 9px auto 0px auto
+    background: #5B21BA
+    border-radius: 12px
+.main-menu-btn
+    display: block
+.main-menu-btn-icon,
+.main-menu-btn-icon:before,
+.main-menu-btn-icon:after
+    display: block
+    position: absolute
+    top: 50%
+    left: 2px
+    height: 4px
+    width: 40px
+    background: #2C417F
+    -webkit-transition: all 0.25s
+    transition: all 0.25s
+.main-menu-btn-icon:before
+    content: ''
+    top: -10px
+    left: 0
+.main-menu-btn-icon:after
+    content: ''
+    top: 10px
+    left: 0
+#main-menu-state:not(:checked) ~ #main-menu
+    display: none
+#main-menu>li>.highlighted>span
+    right: 45px
+#main-menu-state:checked ~ #main-menu
+    padding-right: 58px
+    padding-left: 58px
+    padding-bottom: 70px
+    flex-direction: column
+    display: flex
+    width: 100%
+    max-width: 400px
+    background: #2C417F
+    position: fixed
+    top: 91px
+    z-index: 99999
+    margin: 0
+    height: auto
+    margin-left: 10px
+    transition: all .3s ease
+#main-menu-state:checked ~ #main-menu li a
+    color: white
+#main-menu-state:checked ~ .main-menu-btn .main-menu-btn-icon
+    height: 0
+    background: white
+#main-menu-state:checked ~ .main-menu-btn .main-menu-btn-icon:before
+    transform: rotate(-45deg)
+    top: 0
+#main-menu-state:checked ~ .main-menu-btn .main-menu-btn-icon:after 
+    top: 0
+    transform: rotate(45deg)
+.main-menu-btn 
+    margin: 6px 10px
+    position: relative
+    display: inline-block
+    width: 40px
+    height: 35px
+    text-indent: 29px
+    white-space: nowrap
+    overflow: hidden
+    cursor: pointer
+    font-size: 0px
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0)
+#main-menu
+    justify-content: start
+    padding-top: 45px
+#main-menu
+    padding-right: 28px
+    padding-left: 28px
+#main-menu > a
+    color: white
+    font-size: 16px
+    line-height: 100%
+    display: flex
+    flex-direction: column
+    align-items: flex-end
+    margin-top: 35px
+#main-menu > li > a > span
+    position: absolute
+    top: 245px
+#main-menu > li > a
+    padding-bottom: 10px
+    font-size: 18px
+#main-menu > li > ul
+    display: none
+#main-menu > li > ul > li
+    margin-bottom: 10px
+    border: none
+#main-menu > li > ul > li > a
+    font-size: 12px
+#main-menu > li > .highlighted > span
+    top: 295px !important
+    transform: rotate(90deg)
+#main-menu > li > .highlighted
+    border-bottom: 0.5px solid #EAEAEA
+    width: 100%
+    padding-bottom: 5px
+.main-menu-btn-icon, .main-menu-btn-icon:before, .main-menu-btn-icon:after
+    width: 25px
+.main-menu-btn-icon
+    width: 20px
+.main-menu-btn-icon:after
+    width: 15px
+#main-menu-state:checked ~ .main-menu-btn .main-menu-btn-icon:after
+    width: 25px
+
+.sm-clean > .dop-li
+    padding-top: 20px
+    margin-bottom: 0px
+    border: none
+    text-align: right
+    justify-content: flex-end
+    display: flex
+    flex-direction: column
+    align-items: flex-end
+#main-menu>.dop-li>a
+    display: flex
+    align-items: center
+    justify-content: flex-end
+    flex-direction: column
+#main-menu>.dop-li>a>span
+    top: 0
+    right: 0
+    position: relative
+    width: 35px
+#main-menu>.dop-li>.highlighted
+    width: 35px
+    border: none
+#main-menu>.dop-li>ul>li>a
+    font-size: 18px
+    width: 35px
+    border-bottom: 0.5px solid #EAEAEA
+    text-align: center
+    padding-bottom: 5px
+#main-menu>.dop-li>.highlighted>span
+    top: -15px !important
+    right: -30px
+@include max-screen(767px)
+    #main-menu>li>a>span
+        right: 30px
+        top: 220px
+    #main-menu>li>.highlighted>span
+        right: 18px
+        top: 260px !important
+    #main-menu-state:checked ~ #main-menu
+        max-width: 240px
+        left: 0px
+        padding-right: 28px
+        padding-left: 28px
+    .header__menu
+        left: 0px
+    #main-menu>li>ul>li>a
+        line-height: 16px
+@include max-screen(1024px)
+    #main-menu-state:checked ~ #main-menu
+        margin-left: 0px
+    .sm-clean
+        a
+            padding-right: 0px
+            &:hover
+                padding-right: 0px
+            &:active
+                padding-right: 0px
+            &:focus
+                padding-right: 0px
+    .header
+        justify-content: space-between

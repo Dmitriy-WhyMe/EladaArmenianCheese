@@ -1,0 +1,109 @@
+footer
+    background: #2C417F
+    padding-top: 115px
+    padding-left: 220px
+    padding-bottom: 15px
+    padding-right: 220px
+    position: relative
+    img
+        position: absolute
+        left: 0
+        bottom: 0
+
+.column
+    margin-left: 170px
+    margin-right: 215px
+    a
+        display: flex
+        align-items: center
+        margin-bottom: 40px
+        font-size: 24px
+        line-height: 28px
+        svg
+            margin-right: 25px
+.column--dop
+    margin-left: 0px
+    margin-right: 0px
+    a
+        font-size: 24px
+        line-height: 100%
+        margin-bottom: 16px
+        text-transform: uppercase
+.social
+    display: flex
+    justify-content: flex-end
+    gap: 45px
+.recearch
+    display: flex
+    justify-content: center
+    color: white
+    font-weight: 500
+    font-size: 14px
+    line-height: 35px
+@include max-screen(1366px)
+    footer
+        padding-left: 120px
+        padding-right: 120px
+@include max-screen(1024px)
+    footer
+        padding-left: 50px
+        padding-right: 50px
+        img
+            max-width: 275px
+@include max-screen(1023px)
+    .column
+        margin-left: 50px
+        margin-right: 50px
+    footer
+        padding-left: 20px
+        padding-right: 20px
+        img
+            max-width: 160px
+@include max-screen(767px)
+    footer
+        padding-top: 20px
+    footer > .flex
+        justify-content: space-between
+    footer > .flex > .column
+        margin-left: 0px
+        margin-right: 0px
+        a
+            margin-bottom: 20px
+            p
+                font-size: 10px !important
+                line-height: 12px
+        
+    .column a svg
+        max-width: 20px
+        max-height: 20px
+        margin-right: 10px
+    
+    .column--dop
+        flex-direction: column
+        display: flex
+        align-items: baseline
+        a
+            margin-bottom: 8px !important
+            text-align: left
+            display: flex
+            justify-content: center
+            font-size: 10px
+            line-height: 12px
+            p
+                font-size: 10px !important
+                line-height: 12px
+    .social
+        gap: 10px
+        justify-content: flex-end
+        a
+            svg
+                max-width: 20px
+@include max-screen(413px)
+    .column
+        margin-left: 10px
+        margin-right: 10px
+@include max-screen(374px)
+    .column a svg
+        min-width: 20px
+        min-height: 20px
+        margin-right: 10px

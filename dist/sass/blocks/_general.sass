@@ -1,0 +1,1222 @@
+// main page elements
+body
+	font-size: 28px
+	line-height: 140%
+	color: #212121
+	font-family: 'Roboto'
+	
+	font-weight: 400
+	background: white
+	overflow-x: hidden
+	font-style: normal
+	// +scrollbar(10px, auto, $yellow, $gray2, $dark, null)
+
+.page-container
+	max-width: 1920px
+	width: 100%
+	margin: 0 auto
+	overflow: hidden
+
+.container
+	max-width: 1170px
+	width: 100%
+	padding: 0
+	margin: 0 auto
+	+mq($max-width: 1200px)
+		padding: 0 15px
+		max-width: 100%
+	+mq($max-width: 575px)
+		padding: 0 10px
+.flex
+	display: flex
+.column > a
+	display: flex
+	color: white
+
+
+
+
+.block-1
+	height: 580px
+	background-image: url(../img/1V3A1286.png)
+	position: relative
+	background-size: cover
+	.copy
+		padding: 2px
+		display: flex
+		align-items: center
+		position: absolute
+		right: 215px
+		bottom: 230px
+		border: 1px solid #2C417F
+		border-radius: 50%
+		color: #2C417F
+		font-weight: 900
+		font-size: 10px
+		line-height: 10px
+	.dop__title
+		position: absolute
+		right: 215px
+		bottom: 150px
+		color: #2C417F
+		font-weight: 900
+		font-size: 90px
+		line-height: 90px
+		text-transform: uppercase
+	.manin__title
+		z-index: 2
+		position: absolute
+		right: 0
+		bottom: -50px
+		background: #2C417F
+		max-width: 930px
+		width: 100%
+		height: 195px
+		display: flex
+		align-items: center
+		h1
+			margin-left: 120px
+			text-align: center
+			font-weight: 400
+			font-size: 66px
+			line-height: 70px
+			color: white
+			max-width: 600px
+			text-transform: uppercase
+.block-2 > img
+	position: absolute
+	right: 0
+	top: -100px
+.block-2
+	position: relative
+	padding-top: 80px
+	.block-2__img
+		padding-top: 50px
+		position: relative
+		z-index: 2
+		display: flex
+		justify-content: flex-end
+		a
+			position: absolute
+			right: 0
+			bottom: 0
+			z-index: 3
+			background: #2C417F
+			max-width: 200px
+			width: 100%
+			height: 60px
+			display: flex
+			justify-content: center
+			align-items: center
+			color: white
+			text-align: center
+			text-transform: uppercase
+			font-size: 22px
+			line-height: 100%
+	.block-2__back--img
+		left: 0
+		right: 0
+		position: absolute
+		margin: 0 auto
+		max-width: 700px
+		width: 100%
+		height: 400px
+		z-index: 1
+		background: #2C417F
+	.col
+		.hr
+			margin-top: -25px
+			width: 100px
+			height: 3px
+			background: #A9D85C
+		h2
+			color: #A9D85C
+			font-weight: bold
+			font-size: 48px
+			line-height: 140%
+			margin-bottom: 20px
+			text-transform: uppercase
+		p
+			margin-top: 20px
+			font-size: 28px
+			line-height: 140%
+			max-width: 660px
+			margin-bottom: 10px
+		a
+			background: #A9D85C
+			max-width: 200px
+			width: 100%
+			height: 60px
+			display: flex
+			justify-content: center
+			align-items: center
+			color: white
+			text-align: center
+			text-transform: uppercase
+			font-size: 22px
+			line-height: 100%
+			margin-bottom: 80px
+.block-3 
+	position: relative
+	margin-top: 70px
+	.img__bg--1
+		position: absolute
+		right: 0
+		top: 350px
+		width: 450px
+	.img__bg--2
+		top: 510px
+		width: 450px
+		position: absolute
+		right: 0
+	h2
+		color: #2C417F
+		padding-bottom: 10px
+		max-width: 320px
+		font-weight: bold
+		font-size: 48px
+		text-transform: uppercase
+		border-bottom: 3px solid #2C417F
+		margin: 0 auto
+	p
+		margin: 0 auto
+		margin-top: 20px
+		max-width: 900px
+		text-align: center
+		margin-bottom: 70px
+	.flex
+		justify-content: space-between
+		margin-top: 70px
+		margin-bottom: 90px
+
+.block-3--dop
+	position: relative
+	img
+		z-index: 1
+	.col
+		top: 115px
+		right: 0
+		max-width: 760px
+		width: 100%
+		height: 356px
+		z-index: 2
+		position: absolute
+		padding-top: 42px
+		padding-left: 42px
+		background: #A9D85C
+		h2
+			margin: 0
+			font-weight: 500
+			font-size: 48px
+			text-transform: uppercase
+			color: white
+			border: none
+		.hr
+			height: 3px
+			width: 100px
+			background: white
+		p
+			margin: 0
+			margin-top: 38px
+			font-size: 28px
+			color: white
+			max-width: 500px
+			text-align: left
+			margin-bottom: 40px
+		a
+			color: white
+			text-transform: uppercase
+
+
+
+@include max-screen(1600px)
+	.block-3
+		.img__bg--1
+			position: absolute
+			right: 0
+			top: 500px
+			width: 300px
+		.img__bg--2
+			top: 610px
+			width: 300px
+			position: absolute
+			right: 0
+@include max-screen(1024px)
+	.block-2 .block-2__img img
+		max-width: 790px
+	.block__yt
+		img
+			max-width: 450px
+			max-height: 310px
+@include max-screen(768px)
+	.block-1
+		background-position: center
+	.block-3
+		.img__bg--1
+			top: 550px
+			width: 250px
+		.img__bg--2
+			top: 650px
+			width: 250px
+	.block-3--dop .col
+		top: 170px
+	.block-2>img
+		max-width: 300px
+		top: -50px
+	.block-2 .block-2__img img
+		max-width: 740px
+	.block-1 .dop__title
+		right: 95px
+	.block-1 .manin__title h1
+		margin: 0 auto
+	.block__yt
+		img
+			max-width: 350px
+			max-height: 210px
+	.block__yt
+		div
+			iframe
+				width: 100%
+				height: auto
+@include max-screen(767px)
+	.block-3--dop img
+		margin-left: -10px
+	.block-1 .dop__title
+		right: 0px
+	.block-1 .manin__title h1
+		font-size: 53px
+		line-height: 53px
+	.block-2 .block-2__img img
+		max-width: 395px
+	.block-3 > .container
+		margin-top: 100px
+	.block-3--dop .col
+		padding-left: 10px
+	.block-3 .flex
+		margin: 15px auto
+		flex-direction: column
+	.block__yt
+		img
+			max-width: 100%
+			max-height: 260px
+	.block-1
+		height: 340px
+	.block-1 .copy
+		display: none
+@include max-screen(413px)
+	.block-1 .dop__title
+		font-size: 70px
+		line-height: 70px
+		right: 5px
+@include max-screen(374px)
+	.block-1 .dop__title
+		font-size: 50px
+		line-height: 50px
+	.block-1 .manin__title h1
+		font-size: 40px
+		line-height: 40px
+	.block-2 .col h2
+		font-size: 40px
+	.block-2>img
+		display: none
+	.block-2 .block-2__back--img
+		display: none
+	.block-2 .block-2__img img
+		max-width: 100%
+	.block-3 h2
+		font-size: 40px
+	.block-3--dop .col h2
+		font-size: 40px
+
+// OUR CHEESE
+.block-4
+	position: relative
+	.img__bg--1
+		left: 717px
+		top: 85px
+		width: 275px
+		z-index: 2
+		position: absolute
+	.img__bg--2
+		left: 922px
+		top: 75px
+		width: 275px
+		z-index: 2
+		position: absolute
+	h1
+		text-align: center
+		font-weight: bold
+		font-size: 72px
+		line-height: 140%
+		color: #A9D85C
+		text-transform: uppercase
+	h2
+		position: absolute
+		margin: 0 auto
+		left: 0
+		right: 0
+		text-align: center
+		color: #A9D85C
+		font-weight: bold
+		font-size: 48px
+		text-transform: uppercase
+	.big-hr
+		margin-left: 645px
+		margin-top: -15px
+		background: #2C417F
+		max-width: 415.5px
+		width: 100%
+		height: 65px
+	.flex
+		margin-top: 70px
+		margin-bottom: 50px
+		align-items: center
+		flex-wrap: wrap
+		gap: 15px
+		.item2
+			margin-top: 135px
+		.columns
+			display: flex
+			flex-direction: column
+			gap: 15px
+			.product
+				max-width: 380px
+				height: 338px
+				background: #EAEAEA
+				width: 100%
+				align-items: center
+				display: flex
+				flex-direction: column
+				justify-content: center
+				
+				img
+					max-width: 315px
+				a
+					margin-top: 20px
+					text-align: center
+					font-weight: 500
+					font-size: 22px
+					line-height: 120%
+					color: #2C417F
+					text-transform: uppercase
+@include max-screen(1680px)
+	.block-4 .img__bg--1
+		left: 580px
+		top: 85px
+	.block-4 .img__bg--2
+		left: 825px
+		top: 85px
+	.block-4 .big-hr
+		margin-left: 525px
+		margin-top: -15px
+@include max-screen(1600px)
+	.block-4 .img__bg--1
+		left: 540px
+		top: 85px
+	.block-4 .img__bg--2
+		left: 785px
+		top: 85px
+	.block-4 .big-hr
+		margin-left: 485px
+		margin-top: -15px
+@include max-screen(1440px)
+	.block-4 .img__bg--1
+		left: 480px
+		top: 85px
+	.block-4 .img__bg--2
+		left: 725px
+		top: 65px
+	.block-4 .big-hr
+		margin-left: 415px
+		margin-top: -15px
+@include max-screen(1400px)
+	.block-4 .img__bg--1
+		left: 450px
+		top: 85px
+	.block-4 .img__bg--2
+		left: 705px
+		top: 65px
+	.block-4 .big-hr
+		margin-left: 385px
+		margin-top: -15px
+@include max-screen(1367px)
+	.block-4 .img__bg--1
+		left: 430px
+		top: 85px
+	.block-4 .img__bg--2
+		left: 695px
+		top: 65px
+	.block-4 .big-hr
+		margin-left: 370px
+		margin-top: -15px
+@include max-screen(1280px)
+	.block-4 .img__bg--1
+		left: 400px
+		top: 85px
+	.block-4 .img__bg--2
+		left: 655px
+		top: 65px
+	.block-4 .big-hr
+		margin-left: 325px
+		margin-top: -15px
+@include max-screen(1024px)
+	.block-4 .flex .columns .product
+		max-width: 321px
+	.block-4 .img__bg--1
+		left: 300px
+		top: 85px
+	.block-4 .img__bg--2
+		left: 505px
+		top: 65px
+	.block-4 .big-hr
+		margin-left: 205px
+		margin-top: -15px
+@include max-screen(1023px)
+	.block-4 .img__bg--1
+		left: 100px
+		top: 85px
+	.block-4 .img__bg--2
+		left: 400px
+		top: 65px
+	.block-4 .flex .item2
+		margin-top: 0px
+	.block-4 .flex
+		margin-top: 200px
+		justify-content: center
+	.block-4 .big-hr
+		margin-left: 75px
+		margin-top: -15px
+@include max-screen(767px)
+	.block-4 .img__bg--1
+		display: none
+	.block-4 .img__bg--2
+		display: none
+	.block-4 .flex
+		margin-top: 20px
+	.block-4 .big-hr
+		margin-left: 0px
+		margin-top: -15px
+@include max-screen(374px)
+	.block-4 .flex .columns .product
+		max-width: 300px
+	.block-4 .flex .columns .product img
+		max-width: 100%
+
+// Product-2
+.block--5
+	position: relative
+.block--5 > img
+	position: absolute
+	left: 0
+	top: 130px
+	max-width: 450px
+	width: 100%
+@include max-screen(1550px)
+	.block--5 > img
+		top: 180px
+		max-width: 350px
+@include max-screen(1024px)
+	.block--5 > img
+		top: 300px
+		max-width: 250px
+@include max-screen(767px)
+	.block--5 > img
+		display: none
+.block-5
+	h2
+		text-align: center
+		margin-top: 45px
+		margin-bottom: 20px
+		text-transform: uppercase
+		color: #A9D85C
+	.other-products 
+		margin-bottom: 40px
+		display: flex
+		justify-content: center
+		gap: 40px
+		.product
+			flex-direction: column
+			display: flex
+			justify-content: center
+			align-items: center
+			width: 220px
+			height: 180px
+			background: #f2f1f1
+			a
+				text-align: center
+				font-weight: 500
+				font-size: 10px
+				line-height: 120%
+			img
+				max-width: 190px
+				max-height: 108px
+				height: auto
+				margin-bottom: 10px
+	.flex
+		margin-top: 50px
+		.block__img 
+			margin-right: 45px
+			width: 540px
+			height: 400px
+			background: #f2f1f1
+			display: flex
+			align-items: center
+			justify-content: center
+			img
+				max-width: 252px
+				width: 100%
+		.block__text 
+			h1
+				font-weight: 500
+				font-size: 22px
+				line-height: 160%
+				text-transform: uppercase
+				color: #A9D85C
+				margin-bottom: 5px
+			p
+				font-size: 14px
+				line-height: 160%
+				max-width: 424px
+			.block__items 
+				margin-top: 120px
+				p
+					font-weight: 500
+					font-size: 14px
+					line-height: 100%
+					text-transform: uppercase
+					color: #A9D85C
+					span
+						font-size: 13px
+						line-height: 100%
+						text-transform: uppercase
+						margin-left: 10px
+						color: black
+				.hr--dop
+					width: 100%
+					height: 2px
+					background: #EAEAEA
+					margin-top: 13px
+					margin-bottom: 13px
+@include max-screen(1023px)
+	.block-5 .flex .block__text .block__items
+		margin-top: 15px
+	.block-5 .flex .block__text .block__items p
+		font-size: 12px
+	.block-5 .flex .block__text .block__items p span
+		font-size: 12px
+		line-height: 140%
+@include max-screen(767px)
+	.block-5 .flex
+		flex-direction: column
+	.block-5 .flex .block__img
+		width: 100%
+	.block-5 .other-products
+		flex-direction: column
+		justify-content: center
+		align-items: center
+		gap: 10px
+// Blog
+.block--6
+	position: relative
+	img
+		position: absolute
+		top: -85px
+		right: 0
+@include max-screen(1024px)
+	.block--6 img
+		max-width: 350px
+@include max-screen(767px)
+	.block--6 img
+		display: none
+
+
+.block-6
+	margin-top: 20px
+	position: relative
+	h1
+		position: relative
+		text-align: center
+		font-weight: bold
+		font-size: 64px
+		line-height: 140%
+		color: #2C417F
+		text-transform: uppercase
+		z-index: 2
+	h2
+		color: #2C417F
+		font-weight: 500
+		font-size: 32px
+		line-height: 120%
+		text-transform: uppercase
+		margin-bottom: 20px
+	.big-hr
+		left: 0
+		position: absolute
+		width: 60%
+		background: #A9D85C
+		height: 28px
+		top: 30px
+		z-index: 1
+	.flex
+		gap: 15px
+		.block__1
+			display: flex
+			background: #EAEAEA
+			flex-direction: column
+			max-width: 380px
+			width: 100%
+			height: 550px
+			padding-bottom: 50px
+			img
+				width: 100%
+				height: 330px
+			a
+				margin: 0 auto
+				margin-top: 40px
+				text-align: center
+				color: #2C417F
+				text-transform: uppercase
+				font-weight: 500
+				font-size: 23px
+				line-height: 28px
+			.hr
+				margin-bottom: 40px
+				margin-top: 10px
+				width: 140px
+				height: 2px
+				background: #2C417F
+				margin: 0 auto
+				margin-bottom: 40px
+				margin-top: 10px
+			p
+				text-align: center
+				font-size: 16px
+				line-height: 180%
+	.btn
+		text-transform: uppercase
+		background: #2C417F
+		max-width: 265px
+		width: 100%
+		height: 48px
+		display: flex
+		align-items: center
+		justify-content: center
+		text-align: center
+		color: white
+		font-size: 18px
+		line-height: 120%
+		margin-bottom: 50px
+		margin-top: 20px
+		svg
+			margin-right: 10px
+	.hr
+		margin-top: 15px
+		margin-bottom: 15px
+		width: 100%
+		height: 2px
+		background: #A9D85C
+	.btn-wrap
+		display: flex
+		justify-content: flex-end
+	.col-blog
+		.block__2
+			display: flex
+			justify-content: space-between
+			align-items: center
+			img
+			a
+				text-transform: uppercase
+				color: white
+				max-width: 265px
+				width: 100%
+				height: 48px
+				display: flex
+				align-items: center
+				justify-content: center
+				text-align: center
+				background: #A9D85C
+				font-weight: 500
+				font-size: 18px
+				line-height: 120%
+			h3
+				margin-left: -25%
+				max-width: 312px
+				font-weight: 500
+				font-size: 18px
+				line-height: 160%
+				text-transform: uppercase
+				margin-top: -95px
+	.flex--down
+		margin-bottom: 40px
+		display: flex
+		justify-content: space-between
+		.block__3
+			max-width: 340px
+			width: 100%
+			position: relative
+			img
+				width: 100%
+				position: relative
+			span
+				top: 0
+				left: 0
+				max-width: 140px
+				width: 100%
+				height: 50px
+				display: flex
+				align-items: center
+				justify-content: center
+				text-align: center
+				background: #2C417F
+				position: absolute
+				color: white
+				text-transform: uppercase
+				font-weight: bold
+				font-size: 22px
+			p
+				max-width: 340px
+				font-size: 14px
+				line-height: 160%
+@include max-screen(1024px)
+	.block-6 .flex .block__1 img
+		height: 280px
+	.block-6 .col-blog .block__2 h3
+		margin-left: -5%
+		margin-top: -80px
+	.block-6 .flex--down
+		gap: 10px
+@include max-screen(768px)
+	.block-6 .col-blog .block__2
+		flex-direction: column
+		align-items: center
+	.block-6 .col-blog .block__2 h3
+		margin-left: 0%
+		margin-top: 20px
+		margin-bottom: 20px
+	.block-6 .hr
+		margin: 15px auto
+	.block-6 .flex
+		justify-content: center
+		flex-wrap: wrap
+	.block-6 .flex .block__1
+		max-width: 355px
+@include max-screen(767px)
+	.block-6 .flex .block__1
+		margin-bottom: 20px
+	.block-6 .flex--down .block__3 p
+		max-width: 100%
+	.block-6 .flex
+		gap: 0px
+	.block-6 .flex .block__1
+		max-width: 100%
+	.block-6 .big-hr
+		width: 75%
+	.block-6 .col-blog .block__2 h3
+		max-width: 100%
+	.block-6 .col-blog .block__2 img
+		width: 100%
+	.block-6 .flex .block__1 img
+		height: auto
+	.block-6 .flex .block__1
+		height: auto
+	.block-6 .flex .block__1 a 
+		font-size: 22px
+	.block-6 .btn-wrap
+		justify-content: center
+	.block-6 .flex--down
+		flex-direction: column
+		justify-content: center
+	.block-6 .flex--down .block__3
+		max-width: 100%
+// Recipe
+.block-7
+	.text__right
+		width: 100%
+		color: white
+		background: #2C417F
+		padding-left: 40px
+		padding-top: 20px
+		h2
+			text-transform: uppercase
+			font-weight: 500
+			font-size: 24px
+			line-height: 120%
+			margin-bottom: 22px
+		h3
+			margin-top: 30px
+			font-weight: 500
+			font-size: 18px
+			line-height: 120%
+			text-transform: uppercase
+		p
+			max-width: 500px
+			font-size: 18px
+			line-height: 160%
+		.dop
+			margin-bottom: 25px
+			margin-top: 90px
+		img
+			margin-top: 20px
+			max-width: 175px
+			width: 100%
+.block-7 > .flex
+	margin-bottom: 40px
+.block-7 > .flex > img
+	max-width: 800px
+	width: 100%
+.block-7
+	.container
+		.block__yt--dop 
+			display: flex
+			justify-content: center
+		h2
+			margin-top: 40px
+			margin-bottom: 20px
+			color: #2C417F
+			text-transform: uppercase
+			font-weight: 500
+			font-size: 36px
+			line-height: 120%
+		.flex
+			margin-bottom: 40px
+			gap: 15px
+.block-7 .container .block__yt--dop iframe
+	width: 921px
+	height: 482px
+.block-7 .container .flex .block__yt iframe
+	width: 380px
+	height: 300px
+@include max-screen(1024px)
+	.block-7 .container .block__yt--dop iframe
+		width: 540px
+		height: 360px
+	.block-7 .container .flex .block__yt iframe
+		width: 320px
+		height: 255px
+	.block-7 > .flex > img
+		max-width: 600px
+		height: auto
+	.block-7 .text__right
+		padding-left: 20px
+		padding-right: 20px
+	.block-7
+		.block__yt 
+			img
+				max-width: 320px
+	.block-7
+		.block__yt
+			iframe
+				max-width: 320px
+				height: auto
+@include max-screen(1023px)
+	.block-7 .container .flex .block__yt iframe
+		width: 235px
+		height: 185px
+	.block-7>.flex
+		flex-direction: column
+	.block-7>.flex>img
+		margin: 0 auto
+	.block-7 .text__right
+		display: flex
+		flex-direction: column
+		justify-content: center
+		align-items: center
+	.block-7 .container .block__yt--dop img
+		max-width: 100%
+	.block-7 .block__yt img
+		max-width: 235px
+@include max-screen(767px)
+	.block-7 .container .flex .block__yt iframe
+		width: 300px
+		height: 240px
+	.block-7 .container .block__yt--dop iframe
+		width: 320px
+		height: 140px
+	.block-7 .container .flex
+		flex-direction: column
+		justify-content: center
+		align-items: center
+	.block-7 .block__yt img
+		max-width: 100%
+		height: auto
+		max-height: 100%
+	.block-7 .text__right .dop
+		margin-top: 20px
+// News
+.block--8
+	position: relative
+	img
+		position: absolute
+		top: -125px
+		right: 0
+.block-8
+	margin-top: 40px
+	position: relative
+	h1
+		margin: 0 auto
+		margin-bottom: 25px
+		text-align: center
+		font-weight: bold
+		font-size: 48px
+		line-height: 120%
+		text-transform: uppercase
+		color: #A9D85C
+		z-index: 2
+		position: relative
+	.big-hr
+		position: absolute
+		top: 20px
+		width: 58%
+		height: 28px
+		z-index: 1
+		background: #2C417F
+	.container
+		.flex
+			padding-bottom: 75px
+			justify-content: space-between
+			.block__left
+				img
+					max-width: 700px
+					width: 100%
+					height: auto
+				h2
+					margin-bottom: 15px
+					font-weight: 500
+					font-size: 28px
+					line-height: 120%
+					text-transform: uppercase
+					color: #2C417F
+				p
+					font-size: 14px
+					line-height: 160%
+					max-width: 701px
+			.block__right
+				padding-left: 15px
+				margin-top: 70px
+				border-left: 1.5px solid #EAEAEA
+				h2
+					padding-left: 35px
+					margin-bottom: 35px
+					font-weight: 500
+					font-size: 24px
+					line-height: 120%
+					text-transform: uppercase
+					color: #2C417F
+				p
+					padding-top: 30px
+					max-width: 262px
+					padding-left: 35px
+					padding-bottom: 30px
+					border-bottom: 1.5px solid #EAEAEA
+					font-size: 14px
+					line-height: 140%
+					text-transform: uppercase
+@include max-screen(1024px)
+	.block--8 img
+		max-width: 400px
+@include max-screen(1023px)
+	.block--8 img
+		max-width: 300px
+@include max-screen(767px)
+	.block--8 img
+		display: none
+	.block-8 .big-hr
+		width: 70%
+	.block-8 .container .flex
+		flex-direction: column
+	.block-8 .container .flex .block__right p
+		max-width: 100%
+		padding-left: 10px
+		padding-right: 0px
+// OurStory
+.block--9
+	position: relative
+	img
+		position: absolute
+		left: 0
+		top: 0
+	.bg-1
+		top: -78px
+	.bg-2
+.block-9
+	position: relative
+	h1
+		color: #2C417F
+		font-weight: bold
+		font-size: 72px
+		line-height: 140%
+		text-align: center
+		text-transform: uppercase
+	h2
+		z-index: 2
+		position: relative
+		color: #2C417F
+		font-weight: bold
+		font-size: 48px
+		line-height: 100%
+		text-align: center
+		text-transform: uppercase
+	.big-hr
+		top: 90px
+		z-index: 1
+		left: 45%
+		position: absolute
+		width: 415px
+		height: 65px
+		background: #A9D85C
+	.flex
+		margin-top: 30px
+		justify-content: space-between
+		p
+			margin-bottom: 25px
+			padding-left: 215px
+			max-width: 100%
+			font-size: 18px
+			line-height: 160%
+		img
+			margin-left: 38px
+			max-width: 800px
+			width: 100%
+@include max-screen(1400px)
+	.block-9 .big-hr
+		left: 44%
+	.block-9 .flex img
+		max-width: 600px
+@include max-screen(1024px)
+	.block-9 .big-hr
+		left: 42%
+	.block-9 .flex img
+		max-width: 425px
+    	height: auto
+	.block-9 .flex p
+		padding-left: 90px
+	.block-9 .flex
+		margin-bottom: 100px
+@include max-screen(1023px)
+	.block-9 .big-hr
+		left: 39%
+	.block-9 .flex
+		flex-direction: column
+	.block-9 .flex p
+		padding-left: 20px
+		padding-right: 20px
+	.block-9 .flex img
+		margin-left: 0px
+		max-width: 100%
+		height: auto
+		padding-left: 20px
+		padding-right: 20px
+@include max-screen(767px)
+	.block--9 img
+		display: none
+	.block-9 .big-hr
+		left: 0px
+		width: 100%
+	.block-9 .flex
+		margin-bottom: 20px
+// Contacts
+.block-10
+	h1
+		text-align: center
+		font-weight: bold
+		font-size: 64px
+		line-height: 120%
+		text-transform: uppercase
+		color: #A9D85C
+		margin-bottom: 40px
+		margin-top: 40px
+	.flex
+		margin-bottom: 50px
+		justify-content: space-between
+		form
+			color: black
+			display: flex
+			flex-direction: column
+			max-width: 531px
+			width: 100%
+			p
+				font-weight: 500
+				font-size: 16px
+				line-height: 19px
+				margin-bottom: 3px
+			input
+				font-weight: 500
+				font-size: 16px
+				line-height: 19px
+				margin-bottom: 25px
+				max-width: 531px
+				width: 100%
+				border: none
+				padding-bottom: 5px
+				border-bottom: 2px solid #C4C4C4
+			textarea
+				max-width: 531px
+				width: 100%
+				font-weight: 500
+				font-size: 16px
+				line-height: 19px
+				border: 2px solid #C4C4C4
+				resize: none
+		img
+			max-width: 530px
+			width: 100%
+@include max-screen(1024px)
+	.block-10 .flex
+		margin-bottom: 310px
+	.block-10 .flex form
+		max-width: 400px
+	.block-10 .flex img
+		max-width: 500px
+		height: auto
+@include max-screen(1023px)
+	.block-10 .flex
+		flex-direction: column
+		justify-content: center
+		align-items: center
+		margin-bottom: 0px
+	.block-10 .flex form textarea
+		max-width: 100%
+	.block-10 .flex form input
+		max-width: 100%
+	.block-10 .flex form
+		margin-bottom: 50px
+		max-width: 100%
+	.block-10 .flex img
+		margin-bottom: 50px
+		max-width: 100%
+@include max-screen(374px)
+	.block-10 h1
+		font-size: 55px
+@include max-screen(767px)
+	h1
+		font-size: 30px !important
+	h2
+		font-size: 25px !important
+	h3
+		font-size: 15px !important
+	p
+		font-size: 18px !important
+	.block-1 .dop__title
+		font-size: 30px
+		line-height: 30px
+	body
+		font-size: 20px
+	.block-9 .big-hr
+		top: 35px
+		height: 35px
+	.block-4 .big-hr
+		margin-top: -5px
+		height: 35px
+	.block-4 .flex .columns .product a
+		font-size: 15px
+		padding-left: 5px
+		padding-right: 5px
+	.block-6 .big-hr
+		top: 7px
+	.block-6 .flex .block__1 a
+		font-size: 18px
+	.block-8 .big-hr
+		top: 4px
+	.block-8 .container .flex .block__right h2
+		padding-left: 0px
+
