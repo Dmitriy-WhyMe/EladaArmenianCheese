@@ -3,6 +3,7 @@
 		$(function() {
 			$('#main-menu').smartmenus();
 		});
+		
 		$(window).scroll(function() {
 			var scrolled = $(window).scrollTop() + $(window).height();
 			if ( scrolled > 50) {
